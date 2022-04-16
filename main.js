@@ -6,6 +6,7 @@ const clearGridButton = document.querySelector("#clear-grid");
 const gridSizeInput = document.querySelector("#grid-size");
 const rainbowButton = document.querySelector("#rainbow");
 const blackButton = document.querySelector("#black");
+const eraser = document.querySelector("#eraser");
 
 const gridTiles = [];
 const hexValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
@@ -90,6 +91,10 @@ blackButton.addEventListener("click", () => {
 
 rainbowButton.addEventListener("click", () => {
     currentColor = "rainbow";
+})
+
+eraser.addEventListener("click", () => {
+    currentColor = "#FFFFFF";
 })
 
 createGrid();
