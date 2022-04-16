@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {
+    --text-color: #2d3436;
+    --button-color: #fab1a0;
+}
+
+body {
+    color: var(--text-color);
+    font-family: "Source Code Pro", monospace;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+.grid-ct {
+    display: grid;
+    margin: 0 auto 6rem auto;
+    height: 600px;
+    width: 600px;
+}
+
+.grid-tile {
+    border: 1px solid black;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.options-button {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+    width: 12rem;
+    height: 2rem;
+    transition: 0.25s;
+}
+
+.options-button:hover {
+    scale: 1.1;
+}
+
+.options-number {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+}
+
+/* remove arrows hack */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* for firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
